@@ -28,5 +28,13 @@
     margin-top: auto;
     background-color: transparent;
     margin-bottom: auto;
+}
 
+.pong, .contact{
+    text-decoration: none;
+    color: black;
+}
+
+.pong:hover, .contact:hover{
+    color: darkslateblue;
 }
