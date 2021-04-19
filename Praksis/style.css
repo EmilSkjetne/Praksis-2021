@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navBar{
+    display: flex;
+    min-height: 7rem;
+    width: 100%;
+    background-color: blue;
+}
