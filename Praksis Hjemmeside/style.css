@@ -38,3 +38,20 @@
 .pong:hover, .contact:hover{
     color: darkslateblue;
 }
+
+.canvas{
+    display: flex;
+    width: 70ch;
+    background-color:#d1d1e0;
+    height: 40rem;
+    margin: auto;
+    margin-bottom: 9rem;
+    border-bottom: #000000 solid thin;
+    border-left: #000000 solid thin;
+    border-right: #000000 solid thin;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
