@@ -11,6 +11,7 @@
     width: 100%;
     background-color:#d1d1e0;
     border-bottom:#000000 solid thin;
+    flex-wrap: nowrap;
 }
 .home, .contact{
     display: flex;
@@ -42,7 +43,7 @@
     display: flex;
     width: 90ch;
     background-color:#d1d1e0;
-    height: 40rem;
+    min-height: 70rem;
     margin: auto;
     margin-bottom: 4.5rem;
     border-bottom: #000000 solid thin;
@@ -67,7 +68,18 @@
 }
 
 .info{
+    display: inline;
     background-color: transparent;
-    padding-left: 1.7rem;
-    padding-right: 1.7rem;
+}
+
+.img{
+    float: right;
+    height: 300px;
+    width: 300px;
+    margin: 1rem;
+    background-color: transparent;
+}
+
+.containerInfo{
+    background-color: #d1d1e0;
 }
