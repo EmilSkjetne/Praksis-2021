@@ -12,7 +12,6 @@
     background-color:#d1d1e0;
     border-bottom:#000000 solid thin;
 }
-
 .home, .contact{
     display: flex;
     flex-direction: column;
@@ -41,17 +40,34 @@
 
 .canvas{
     display: flex;
-    width: 70ch;
+    width: 90ch;
     background-color:#d1d1e0;
     height: 40rem;
     margin: auto;
-    margin-bottom: 9rem;
+    margin-bottom: 4.5rem;
     border-bottom: #000000 solid thin;
     border-left: #000000 solid thin;
     border-right: #000000 solid thin;
+    flex-direction: inherit;
 }
 
 .container{
     display: flex;
     flex-direction: column;
+}
+
+.me{
+    display: flex;
+    background-color: #d1d1e0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    font-size: 3rem;
+}
+
+.info{
+    background-color: transparent;
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
 }
