@@ -43,7 +43,7 @@
     display: flex;
     width: 90ch;
     background-color:#d1d1e0;
-    min-height: 70rem;
+    min-height: 38rem;
     margin: auto;
     margin-bottom: 4.5rem;
     border-bottom: #000000 solid thin;
@@ -68,6 +68,7 @@
 }
 
 .info{
+    padding: auto;
     display: inline;
     background-color: transparent;
 }
@@ -82,4 +83,5 @@
 
 .containerInfo{
     background-color: #d1d1e0;
+    margin-left: 1rem;
 }
