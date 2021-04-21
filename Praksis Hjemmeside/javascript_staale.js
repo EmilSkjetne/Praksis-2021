@@ -29,7 +29,6 @@ var step = function(){
     //context.fillRect(0, 0, width, height);
     //update();
     render();
-    animate(step);
     }
 
 window.onload = function() {
