@@ -15,18 +15,24 @@ var aminate = window.requestAnimationFrame ||
     canvas.width = width;
     canvas.height = height;
 
-    window.onload = function() {
-        document.body.appendChild(canvas);
+window.onload = function() {
+    document.body.appendChild(canvas);
+    animate(step);
+    };
+
+var render = function(){
+    context.fillStyle = "#FF00FF";
+    context.fillRect = (0, 0, width, height);
+}        
+    
+var step(){
+    update();
+        render();
         animate(step);
-      };
-
-        var step(){
-            update();
-            render();
-            animate(step);
-        }
+    }
 
 
-        var update = function(){
+var update = function(){
 
-        }
+}
+
