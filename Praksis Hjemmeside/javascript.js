@@ -4,6 +4,7 @@
 
 //kommer til og leke litt med denne koden, men kommer ikke til og pushe det
 
+
 var animate = window.requestAnimationFrame ||
     window.webkitRequestAnimationFrame ||
     window.mozRequestAnimationFrame ||
@@ -16,29 +17,28 @@ var animate = window.requestAnimationFrame ||
     canvas.height = height;
     var context = canvas.getContext('2d');
 
-
+    var render = function(){
+        console.log("render");
+        context.fillStyle = "#FF00FF";
+        context.fillRect(0, 0, width, height);
+    }        
+    
 var step = function(){
     //update();
     render();
+    console.log("hola");
+    animate(step);
     }
 
 window.onload = function() {
     console.log(canvas);
     document.body.appendChild(canvas);
-
     animate(step);
     };
 
-var render = function(){
-    console.log("render");
-    context.fillStyle = "#FF00FF";
-    context.fillRect(0, 0, width, height);
-}        
-    
-
 
 var update = function(){
-
+    ball.update();
 }
 
 function Paddle(x, y, width, height){
@@ -81,9 +81,10 @@ Ball.prototype.render = function(){
 }
 
 var render = function(){
+    console.log("render 2")
     context.fillStyle = "#FF00FF";
-    context.fillRect(0, 0, width, height)
+    context.fillRect(0, 0, width, height);
     player.render();
     computer.render();
     ball.render();
-}
+}   
