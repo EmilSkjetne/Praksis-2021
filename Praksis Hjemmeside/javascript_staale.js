@@ -31,12 +31,6 @@ var step = function(){
     render();
     }
 
-window.onload = function() {
-    console.log(canvas);
-    document.body.appendChild(canvas);
-
-    animate(step);
-    };
 
 var render = function(){
     console.log("render");
@@ -44,6 +38,12 @@ var render = function(){
     context.fillRect(0, 0, width, height);
 }        
     
+window.onload = function() {
+    console.log(canvas);
+    document.body.appendChild(canvas);
+
+    animate(step);
+    };
 
 
 var update = function(){
