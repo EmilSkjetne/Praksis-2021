@@ -86,6 +86,23 @@
     margin-left: 1rem;
 }    
 
-canvas{
-    padding: auto;
+#pong{
+    width: 400px;
+    height: 400px;
+    border: #000000 solid thin;
+    margin: auto;
+    display: flex;
+}
+
+.canvas{
+    display: flex;
+    width: 90ch;
+    background-color:#d1d1e0;
+    min-height: 38rem;
+    margin: auto;
+    margin-bottom: 4.5rem;
+    border-bottom: #000000 solid thin;
+    border-left: #000000 solid thin;
+    border-right: #000000 solid thin;
+    flex-direction: inherit;
 }

@@ -39,7 +39,7 @@ var step = function(){
 //Når vinduet blir lastet kjører dette og lager et canvas element. Starter også loopen
 
 window.onload = function() {
-    document.body.appendChild(canvas);
+    document.getElementById("pong").appendChild(canvas);
     animate(step);
     };
 
@@ -141,7 +141,7 @@ var update = function(){
     ball.update(player.paddle, computer.paddle);
 }
 
-
+//Oppdaterer ballen og starter med kollisjon
 
 Ball.prototype.update = function(paddle1, paddle2){
         this.x += this.x_speed;
@@ -162,7 +162,7 @@ Ball.prototype.update = function(paddle1, paddle2){
         this.x_speed = -this.x_speed;
     }
 
-    //scoring a point
+    //scoring a 
 
     if (this.y < 0 || this.y > 400) {
         this.x = 200
