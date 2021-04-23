@@ -25,17 +25,17 @@
     display: flex;
     flex-direction: column;
     font-size: 3rem;
-    margin-top: auto;
+    margin: auto;
     background-color: transparent;
     margin-bottom: auto;
 }
 
-.pong, .contact{
+.pong, tact{
     text-decoration: none;
     color: black;
 }
 
-.pong:hover, .contact:hover{
+.pong:hover{
     color: darkslateblue;
 }
 
