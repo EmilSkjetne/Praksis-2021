@@ -171,6 +171,8 @@ Ball.prototype.update = function(paddle1, paddle2){
         this.y_speed = 3;
     }
 
+    //kollisjon
+
     if (top_y > 300) {
         if (top_y < (paddle1.y + paddle1.height) && bottom_y > paddle1.y && top_x < (paddle1.x + paddle1.width) && bottom_x > paddle1.x){
             //hit the player paddle
@@ -190,6 +192,8 @@ Ball.prototype.update = function(paddle1, paddle2){
       }
     };
 
+//input
+
 var keysDown = {};
 
 window.addEventListener("keydown", function(event) {
@@ -205,6 +209,8 @@ var update = function() {
     ball.update(player.paddle, computer.paddle);
   };
   
+//flytter på paddle
+
 Player.prototype.update = function() {
     for(var key in keysDown) {
         var value = Number(key);
@@ -218,6 +224,8 @@ Player.prototype.update = function() {
 }
 };
   
+//Computer legger seg alltid under ballen
+
 Paddle.prototype.move = function(x, y) {
     this.x += x;
     this.y += y;
@@ -238,6 +246,8 @@ var update = function() {
     ball.update(player.paddle, computer.paddle);
   };
   
+//Mer kollisjon
+
 Computer.prototype.update = function(ball) {
     var x_pos = ball.x;
     var diff = -((this.paddle.x + (this.paddle.width / 2)) - x_pos);
